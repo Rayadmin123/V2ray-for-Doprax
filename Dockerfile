@@ -1,6 +1,7 @@
 FROM nginx:latest
 MAINTAINER ifeng <https://t.me/HiaiFeng>
 EXPOSE 80
+EXPOSE 443
 USER root
 
 RUN apt-get update && apt-get install -y supervisor wget unzip
