@@ -18,7 +18,7 @@ COPY config.json /etc/v2ray/
 COPY entrypoint.sh /usr/local/v2ray/
 
 RUN mkdir /cert/
-COPY cert.pem /cert/
+COPY cert.cer /cert/
 COPY cert.key /cert/
 
 # 感谢 fscarmen 大佬提供 Dockerfile 层优化方案
